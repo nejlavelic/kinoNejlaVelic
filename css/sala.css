@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #eeeeee;
+    min-width: 300px;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.info {
+    margin-bottom: 30px;
+}
+
+.info h1 {
+    margin-bottom: 10px;
+}
+
+.info p {
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.platno {
+    width: 300px;
+    max-width: 90%;
+    margin: 0 auto 30px auto;
+    padding: 15px;
+    background-color: #444c56;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    border-radius: 4px;
+}
+
+.sjedista {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+}
+
+.red {
+    display: grid;
+    grid-template-columns: 30px repeat(10, 30px);
+    gap: 8px;
+    align-items: center;
+}
+
+.oznaka {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.sjediste {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    border-radius: 3px;
+}
+
+.slobodno {
+    background-color: green;
+}
+
+.zauzeto {
+    background-color: red;
+}
+
+.rezervisano {
+    background-color: gray;
+}
+
+@media (max-width: 600px) {
+    .red {
+        grid-template-columns: 25px repeat(10, 22px);
+        gap: 5px;
+    }
+
+    .sjediste {
+        width: 22px;
+        height: 22px;
+    }
+
+    .oznaka {
+        font-size: 16px;
+    }
+
+    .platno {
+        font-size: 20px;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 400px) {
+    .red {
+        grid-template-columns: 20px repeat(10, 18px);
+        gap: 4px;
+    }
+
+    .sjediste {
+        width: 18px;
+        height: 18px;
+    }
+}
