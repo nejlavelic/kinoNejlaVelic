@@ -1,1 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #000000;
+    min-width: 300px;
+}
+
+.site-header {
+    background-color: #111111;
+    text-align: center;
+    padding: 40px 20px 30px;
+    border-bottom: 2px solid #000000;
+}
+
+.header-overlay h1 {
+    font-size: 38px;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 18px;
+    color: #dddddd;
+}
+
+.main-nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #222222;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.main-nav li {
+    margin: 0;
+}
+
+.main-nav a {
+    display: block;
+    padding: 15px 25px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    border: 1px solid #333333;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+    background-color: #444444;
+}
+
+.content {
+    width: 100%;
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 15px;
+}
+
+.schedule-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th,
+td {
+    border: 1px solid #999999;
+    padding: 14px;
+    text-align: center;
+}
+
+th {
+    background-color: #111111;
+    color: white;
+}
+
+.trenutno {
+    background-color: white;
+}
+
+.uskoro {
+    background-color: powderblue;
+}
+
+.nije-u-ponudi {
+    background-color: gray;
+    color: white;
+}
+
+.site-footer {
+    text-align: center;
+    padding: 18px;
+    background-color: #111111;
+    color: white;
+    margin-top: 30px;
+}
+
+@media (max-width: 650px) {
+    .main-nav {
+        position: static;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .main-nav a {
+        text-align: center;
+    }
+
+    .header-overlay h1 {
+        font-size: 28px;
+    }
+
+    .subtitle {
+        font-size: 16px;
+    }
+
+    .schedule-section h2 {
+        font-size: 26px;
+    }
+
+    th,
+    td {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
