@@ -81,9 +81,22 @@ body {
 
 .movie-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 200px);
+    grid-template-columns: repeat(5, 200px);
     gap: 10px;
     justify-content: start;
+}
+
+@media (max-width: 800px) {
+    .movie-grid {
+        grid-template-columns: repeat(3, 200px);
+    }
+}
+
+@media (max-width: 650px) {
+    .movie-grid {
+        grid-template-columns: repeat(1, 200px);
+        justify-content: center;
+    }
 }
 
 .movie-card {
@@ -142,14 +155,12 @@ body {
     margin-top: 30px;
 }
 
-/* 1080px -> 5 elemenata */
 @media (max-width: 1080px) {
     .content {
         max-width: 1040px;
     }
 }
 
-/* 800px -> 3 elementa */
 @media (max-width: 800px) {
     .content {
         max-width: 620px;
