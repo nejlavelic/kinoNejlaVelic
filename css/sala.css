@@ -112,3 +112,28 @@ body {
         height: 18px;
     }
 }
+.navigacija {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.navigacija button {
+    padding: 10px 18px;
+    border: none;
+    background-color: #444c56;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.navigacija button:hover {
+    background-color: #2f363d;
+}
+
+.sjediste {
+    cursor: pointer;
+}
