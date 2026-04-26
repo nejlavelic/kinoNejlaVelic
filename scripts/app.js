@@ -1,8 +1,8 @@
 const podaci = {
     projekcije: [
         {
-            film: "Fast Chase",
-            vrijeme: "19:30",
+            film: "Red Notice",
+            vrijeme: "19:00",
             sala: 3,
             sjedista: [
                 ...generisiSjedista("A", ["slobodno", "slobodno", "slobodno", "slobodno", "zauzeto", "zauzeto", "zauzeto", "zauzeto", "rezervisano", "rezervisano"]),
@@ -16,8 +16,8 @@ const podaci = {
             ]
         },
         {
-            film: "Night Mystery",
-            vrijeme: "21:00",
+            film: "The Man from Toronto",
+            vrijeme: "20:30",
             sala: 2,
             sjedista: [
                 ...generisiSjedista("A", ["slobodno", "zauzeto", "slobodno", "slobodno", "rezervisano", "zauzeto", "slobodno", "slobodno", "rezervisano", "slobodno"]),
